@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-class student
+class Student
 {
 	private:
 		int reg_no,i,n;
@@ -9,9 +9,9 @@ class student
 		float a;
 	public:
 		void get();
-		float avg(int marks[]);
 }s;
-void student::get(){
+void Student::get(){
+    int sum=0,avg;
 	cout<<"STUDENT INFORMATION SYSTEM:"<<endl;
 	cout<<"Enter no of students:"<<endl;
 	cin>>n;
@@ -22,25 +22,27 @@ void student::get(){
 		cout<<"Enter Name:";
 		cin>>s.name;
 	}
+	cout<<"Enter 5 subject marks:"<<endl;
+	for(int i=0;i<5;++i)
+	{
+		cin>>marks[i];
+	}
 	for(i=0;i<5;i++)
 	{
-		cout<<"Enter 5 subject marks:"<<endl;
-		cin>>s.marks[5];
+	    sum=sum+marks[i];
 	}
-	avg(int marks);
-}
-float student::avg(int marks[]){
-	int a;
-	for(i=0;i<5;i++)
-	{
-		a+=marks[i];
+	avg=sum/5;
+	for(i=0;i<n;i++){
+	cout<<"\nStudent"<<i+1;
+	cout<<"\nRegister name:"<<s.reg_no;
+	cout<<"\nName:"<<s.name;
 	}
-	return (a/5.0);
+	cout<<"Marks:"<<s.marks;
+	cout<<"Average:"<<avg;
 }
 int main()
 {
-	student s;
-	s.get();
-	s.avg;
-	return 0;
+    Student s;
+    s.get();
+    return 0;
 }
