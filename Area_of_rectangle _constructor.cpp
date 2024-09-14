@@ -19,4 +19,5 @@ int main()
 {
       area a;
       a.area_rectangle(l,b);
+      return 0;
 }
