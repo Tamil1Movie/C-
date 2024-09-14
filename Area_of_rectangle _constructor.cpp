@@ -2,22 +2,26 @@
 using namespace std;
 class area
 {    
+      int l,b;
       public:
       area()
       {
-            int length,breadth;
+            int l,b;
       }
-      void area_reactangle(int l,int b)
+      void area_rectangle(int l,int b)
       {
-              cout<<"Enter length and breadth:";
-              cin>>length<<breadth;
-              A=length*breadth;
+              int A;
+              A=l*b;
               cout<<"Area of rectangle:"<<A;
       }
 };
 int main()
 {
+      int l,b;
       area a;
+      cout<<"Enter length and breadth:";
+      cin>>l;
+      cin>>b;
       a.area_rectangle(l,b);
       return 0;
 }
