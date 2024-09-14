@@ -1,7 +1,10 @@
 #include<iostream>
+using namespace std;
 class fibonacci
 {
-      fibonacci
+      int first,second,next,n;
+      public:
+      fibonacci()
       {
             first=0;
             second=1;
@@ -24,7 +27,8 @@ class fibonacci
       }
 };
 int main()
-{
+{   
+      int n;
       fibonacci f;
       f.fibonacci_series(n);
       return 0;
