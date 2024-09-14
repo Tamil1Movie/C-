@@ -2,10 +2,11 @@
 using namespace std;
 class Sum
 {
+    int a[10],sum=0;
     public:
     Sum()
     {
-          int a[10],n,sum=0
+          int a[10],n,sum=0;
     }
     void Sum_of_array(int n)
     {
@@ -20,7 +21,7 @@ class Sum
           cout<<"Given array:";
           for(i=0;i<n;i++)
           {
-                cout<<a[i];
+                cout<<a[i]<<" "<<endl;
           }
           for(i=0;i<n;i++)
           {
@@ -31,7 +32,8 @@ class Sum
 };
 int main()
 {
+    int n;
       Sum s;
-      s.sum_of_array(n);
+      s.Sum_of_array(n);
 
 }
