@@ -2,17 +2,12 @@
 using namespace std;
 class distance
 {
-	private:
-		int feet;
-		float inches;
+	int feet;
+	float inches;
 	public:
-		distance():feet(0),inches(0.0)
+		distance ()
 		{
-			int d1,d2,d3;
-			distance d1(11,2.5);
-		}
-		distance(int ft,int in):feet(ft),inches(in)
-		{
+			int d1,d2,d3
 		}
 		void get()
 		{
@@ -28,6 +23,7 @@ class distance
 }
 int main()
 {
+	distance d1,d2,d3;
 	distance d1(11,2.5);
         distance d2(d1);
 	distance d3=d1;
